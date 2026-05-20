@@ -1,8 +1,9 @@
-
 body {
-  background-color: limegreen;
+  background-color: blanchedalmond;
 }
 
-h1 {
-  text-align: center;
+.page_top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
