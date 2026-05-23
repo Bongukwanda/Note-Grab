@@ -10,12 +10,18 @@
         <h1>Quick Note</h1>
       </div>
       <div class="buttons">
-        <button class="button_check_notes">Check Notes</button>
-        <button class="button_add_note">ADD Note</button>
+        <button id="view_note" style="padding: 5px;">View Note</button>
+        <button id="add_note" style="padding: 5px;">Add Note</button>
       </div>
     </div>
     <div class="page_bottom">
-      <div class="text_list"></div>
+      <div id="note_list" class="text_list" role="list">
+        <div role="listitem">Test 1.pdf</div>
+        <hr>
+        <div role="listitem">Test 2.pdf</div>
+        <hr>
+        <div role="listitem">Test 3.pdf</div>
+      </div>
     </div>
 
     <script src="script.js"></script>

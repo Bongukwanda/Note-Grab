@@ -1,14 +1,23 @@
-const buttonToShowNotes = document.getElementsByClassName("button_check_notes");
-const textList = document.getElementsByClassName("text_list");
+const textList = document.getElementById("note_list");
+const btnViewNote = document.getElementById("view_note");
+const btnAddNote = document.getElementById("add_note");
 
+let fileNumber = 4;
 
-function showTextList() {
-  if (textList.style.display == "flex"){
-    textList.style.display = "none";
+function viewNotes() {
+  if (textList.style.visibility == "visible"){
+    textList.style.visibility = "hidden";
   }
   else {
-    textList.style.display = "flex";
+    textList.style.visibility = "visible";
   }
 }
 
-buttonToShowNotes.addEventListener("click", showTextList);
+function addNote() {
+  let myTestFile = `Test ${this.fileNumber}.pdf`;
+  myTestFile += 1;
+  textList.append(`<hr>\n\n<div role='listitem'>${myTestFile}</div>`);
+}
+
+btnViewNote.addEventListener("click", viewNotes);
+btnAddNote.addEventListener("click", addNote);
