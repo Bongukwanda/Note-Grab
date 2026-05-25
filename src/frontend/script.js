@@ -14,9 +14,9 @@ function viewNotes() {
 }
 
 function addNote() {
-  let myTestFile = `Test ${this.fileNumber}.pdf`;
-  myTestFile += 1;
-  textList.append(`<hr>\n\n<div role='listitem'>${myTestFile}</div>`);
+  let myTestFile = `Test ${fileNumber}.pdf`;
+  fileNumber += 1;
+  textList.insertAdjacentHTML("beforeend", `<hr><div role='listitem'>${myTestFile}</div>`);
 }
 
 btnViewNote.addEventListener("click", viewNotes);
