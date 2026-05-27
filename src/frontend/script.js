@@ -1,4 +1,5 @@
 const textList = document.getElementById("note_list");
+const textModal = document.getElementById("text-modal")
 const btnViewNote = document.getElementById("view_note");
 const btnAddNote = document.getElementById("add_note");
 
@@ -14,9 +15,9 @@ function viewNotes() {
 }
 
 function addNote() {
-  let myTestFile = `Test ${fileNumber}.pdf`;
-  fileNumber += 1;
-  textList.insertAdjacentHTML("beforeend", `<hr><div role='listitem'>${myTestFile}</div>`);
+  if (textModal.style.display == "none"){
+    textModal.style.display = "flex"
+  }
 }
 
 btnViewNote.addEventListener("click", viewNotes);
