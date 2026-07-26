@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Note Grabber</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page_top">
+      <div>
+        <h1>Quick Note</h1>
+      </div>
+      <div class="buttons">
+        <button id="view_note" style="padding: 5px;">View Note</button>
+        <button id="add_note" style="padding: 5px;">Add Note</button>
+      </div>
+    </div>
+    <div class="page_bottom">
+      <div id="note_list" class="text_list" role="list">
+        <div role="listitem">Test 1.pdf</div>
+      </div>
+    </div>
+    <div class="text-box-modal" id="text-modal">
+      <div class="text-box-modal-box" role="document">
+        <div class="modal-header">
+          <h4 class="modal-title">My Header</h4>
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
